@@ -1,34 +1,55 @@
 import React, { useEffect, useRef } from "react";
 import p5 from "p5";
+import "../App.css";
 
-const Home: React.FC = () => {
+const Background: React.FC = () => {
   const sketchRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const sketch = (s: p5) => {
+      const isMobile = window.innerWidth <= 768; // Or use the combined touch & width check
+      const particleCount = isMobile ? 100 : 400;
+
       const particles: Particle[] = [];
       let prevMouseX = s.mouseX;
       let prevMouseY = s.mouseY;
 
+      // Determine if the device is touch-enabled
+      const isTouchDevice =
+        "ontouchstart" in window ||
+        (navigator as any).maxTouchPoints > 0 ||
+        (navigator as any).msMaxTouchPoints > 0;
+
       s.setup = () => {
         s.createCanvas(s.windowWidth, s.windowHeight);
-        for (let i = 0; i < 400; i++) {
+        for (let i = 0; i < particleCount; i++) {
           particles.push(new Particle(s));
         }
       };
 
       s.draw = () => {
         s.background(16, 16, 16);
-        const mouseDir = s.createVector(
-          s.mouseX - prevMouseX,
-          s.mouseY - prevMouseY,
-        );
+
+        // Only calculate and apply mouse direction if not a touch device
+        if (!isTouchDevice) {
+          const mouseDir = s.createVector(
+            s.mouseX - prevMouseX,
+            s.mouseY - prevMouseY,
+          );
+          particles.forEach((p) => {
+            p.applyForce(mouseDir);
+          });
+        }
+
         particles.forEach((p) => {
-          p.applyForce(mouseDir);
           p.update();
           p.display();
-          p.checkMouse(s.mouseX, s.mouseY);
+          // Check for mouse proximity only if not a touch device
+          if (!isTouchDevice) {
+            p.checkMouse(s.mouseX, s.mouseY);
+          }
         });
+
         prevMouseX = s.mouseX;
         prevMouseY = s.mouseY;
       };
@@ -45,13 +66,7 @@ const Home: React.FC = () => {
     };
   }, []);
 
-  return (
-    <div ref={sketchRef} className="background">
-      <div className="container">
-        <h1>adigoj</h1>
-      </div>
-    </div>
-  );
+  return <div ref={sketchRef} className="background" />;
 };
 
 class Particle {
@@ -122,4 +137,4 @@ class Particle {
   }
 }
 
-export default Home;
+export default Background;

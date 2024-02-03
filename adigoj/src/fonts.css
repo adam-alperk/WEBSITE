@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Unageo";
+  src: url("/fonts/unageo/Unageo[wght].ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Banteng";
+  src: url("/fonts/banteng/BantengStory.otf") format("opentype");
+}

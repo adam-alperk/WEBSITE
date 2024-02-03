@@ -1,19 +1,24 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/home.tsx"; // Adjust the import path according to your file structure
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Background from "./assets/Background.tsx";
+import Home from "./pages/Home.tsx";
+import Work from "./pages/Work.tsx";
+import Contact from "./pages/Contact.tsx";
+import About from "./pages/About.tsx";
+import "./App.css";
 
-const App: React.FC = () => {
+function App() {
   return (
     <Router>
-      <div>
-        {/* You can place a navbar or any other static component here */}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          {/* Add more Route components here for additional pages */}
-        </Routes>
-      </div>
+      <Background />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/work" element={<Work />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </Router>
   );
-};
+}
 
 export default App;

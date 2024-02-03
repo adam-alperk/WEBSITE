@@ -1,21 +1,61 @@
+@import url("./fonts.css");
+
+* {
+  text-align: center;
+}
+
 .background {
   display: flex;
-  flex-direction: column;
   position: fixed;
-  top: 0px;
-  height: 100vh;
+  top: 0;
   width: 100vw;
-  z-index: 1;
+  /* height: 100vh; */
+  height: -webkit-fill-available;
+  justify-content: center;
+  z-index: -1;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  width: 70vw;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  /* border: 5px solid red; */
 }
 
-h1 {
-  display: flex;
-  position: absolute;
-  width: 90vw;
+.container h1 {
+  pointer-events: auto;
+  /* color: #c9d1d5; */
+  color: #ff3a55;
+  /* font-family: "Unageo", sans-serif; */
+  font-family: "Banteng", sans-serif;
+  font-size: 8rem;
+  text-align: center;
+  letter-spacing: 0.5rem;
+}
+
+.container h2 {
+  pointer-events: auto;
+  color: #c9d1d59a;
+  font-family: "Unageo", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+/* ###################################### MEDIA ####################################### */
+
+@media (max-width: 1080px) {
+  .container h1 {
+    margin-bottom: 20px;
+    font-size: 4rem;
+  }
+  .container h2 {
+    font-size: 1rem;
+  }
 }
