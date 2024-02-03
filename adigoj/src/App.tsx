@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home"; // Adjust the import path according to your file structure
+import Home from "./pages/home.tsx"; // Adjust the import path according to your file structure
 
 const App: React.FC = () => {
   return (
