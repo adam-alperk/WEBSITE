@@ -28,13 +28,22 @@
   /* border: 5px solid red; */
 }
 
+.rive {
+  display: flex;
+  position: absolute;
+  /* top: 50vh; */
+  width: 60%;
+  height: 60%;
+  filter: opacity(50%);
+}
+
 .container h1 {
   pointer-events: auto;
-  /* color: #c9d1d5; */
-  color: #ff3a55;
-  /* font-family: "Unageo", sans-serif; */
-  font-family: "Banteng", sans-serif;
-  font-size: 8rem;
+  color: #c9d1d5;
+  /* color: #ff3a55; */
+  font-family: "Unageo", sans-serif;
+  /* font-family: "Banteng", sans-serif; */
+  font-size: 6rem;
   text-align: center;
   letter-spacing: 0.5rem;
 }
@@ -45,7 +54,26 @@
   font-family: "Unageo", sans-serif;
   font-size: 1.3rem;
   font-weight: 400;
-  margin-top: 40px;
+  /* word-spacing: 0.2rem; */
+  margin-top: -40px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 5px solid red; */
+}
+
+.navButton {
+  display: flex;
+  color: #4a4e52;
+  background-color: #c9d1d5;
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 3;
 }
 
 /* ###################################### MEDIA ####################################### */

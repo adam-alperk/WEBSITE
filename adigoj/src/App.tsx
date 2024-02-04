@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Background from "./assets/Background.tsx";
 import Home from "./pages/Home.tsx";
 import Work from "./pages/Work.tsx";
@@ -7,7 +7,7 @@ import Contact from "./pages/Contact.tsx";
 import About from "./pages/About.tsx";
 import "./App.css";
 
-function App() {
+const App: React.FC = () => {
   return (
     <Router>
       <Background />
@@ -19,6 +19,6 @@ function App() {
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;
