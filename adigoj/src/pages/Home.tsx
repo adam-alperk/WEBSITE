@@ -13,10 +13,10 @@ const Home: React.FC = () => {
         <div className="navigation">
           <Link to="/work" className="navButton">
             Work
-          </Link>{" "}
+          </Link>
           <Link to="/about" className="navButton">
             About
-          </Link>{" "}
+          </Link>
         </div>
       </div>
     </div>
