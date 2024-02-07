@@ -1,6 +1,6 @@
 // Work.tsx
-import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom"; // Import Link
 import "../App.css";
 
 const Work = () => {
@@ -11,8 +11,17 @@ const Work = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      {/* Your Work page content */}
-      <h1>Work</h1>
+      <div className="container">
+        <div className="navigation">
+          <Link to="/" className="navButton">
+            Home
+          </Link>
+          <Link to="/about" className="navButton">
+            About
+          </Link>
+        </div>
+        <h1>Work</h1>
+      </div>
     </motion.div>
   );
 };
