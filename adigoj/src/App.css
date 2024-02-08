@@ -172,15 +172,17 @@ img {
   }
 
   .rive {
-    display: flex;
-    position: fixed;
-    width: 96%;
-    bottom: -50%;
-    transform: rotate(136deg);
+    /* display: flex; */
+    /* position: fixed; */
+    /* width: 96%; */
+    /* bottom: -50%; */
+    /* transform: rotate(136deg); */
+    visibility: hidden;
   }
 
   .navigation {
     top: 55vh;
+    position: fixed;
     width: 300px;
     max-width: 97vw;
     z-index: 4;
@@ -207,16 +209,21 @@ img {
     position: absolute;
   }
 
+  #homenav {
+    position: fixed;
+  }
+
   .navButton {
     margin: 10px;
     margin-top: 0px;
   }
 
   .rive {
-    display: flex;
-    position: fixed;
-    width: 100%;
-    bottom: -45%;
-    transform: rotate(136deg);
+    /* display: flex; */
+    /* position: fixed; */
+    /* width: 100%; */
+    /* bottom: -45%; */
+    /* transform: rotate(136deg); */
+    visibility: hidden;
   }
 }

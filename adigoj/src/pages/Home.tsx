@@ -13,7 +13,7 @@ const Home: React.FC = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="container">
-        <div className="navigation">
+        <div className="navigation" id="homenav">
           <Link to="/work" className="navButton">
             Work
           </Link>
