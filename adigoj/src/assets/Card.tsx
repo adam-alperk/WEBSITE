@@ -14,9 +14,11 @@ const ProjectCard = ({ name, imageUrl, websiteUrl }) => {
       <img
         src={imageUrl}
         alt={name}
-        style={{ width: "100%", height: "auto" }}
+        // style={{ width: "100%", height: "auto" }}
       />
-      <h3>{name}</h3>
+      <div className="project-name">
+        <h3>{name}</h3>
+      </div>
     </div>
   );
 };
