@@ -15,8 +15,8 @@ function About() {
           <Link to="/" className="navButton">
             Home
           </Link>
-          <Link to="/about" className="navButton">
-            About
+          <Link to="/work" className="navButton">
+            Work
           </Link>
         </div>
         <h1>About</h1>
