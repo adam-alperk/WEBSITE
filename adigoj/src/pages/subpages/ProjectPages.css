@@ -1,0 +1,17 @@
+.project-section {
+  width: 1000px;
+  height: -webkit-fill-awilable;
+  max-width: 100vw;
+  padding: 5px;
+}
+
+.project-section h1,
+.project-section h2 {
+  font-family: "Unageo", sans-serif;
+}
+
+.project-section h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 50px;
+}

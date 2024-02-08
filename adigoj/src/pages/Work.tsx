@@ -27,7 +27,7 @@ const Work = () => {
             <ProjectCard
               name="Redfall Trailer"
               imageUrl="../../public/images/sd-cards/Redfall.webp"
-              websiteUrl="www.google.com"
+              websiteUrl="/work/redfall"
             />
             <ProjectCard
               name="Paper Samurai"

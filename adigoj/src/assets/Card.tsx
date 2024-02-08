@@ -1,8 +1,11 @@
+import { useNavigate } from "react-router-dom"; // Import useNavigate hook
 import "./Card.css";
 
 const ProjectCard = ({ name, imageUrl, websiteUrl }) => {
+  const navigate = useNavigate(); // Initialize the useNavigate hook
+
   const handleClick = () => {
-    window.open(websiteUrl, "_blank"); // Opens the project website in a new tab
+    navigate(websiteUrl); // Use navigate to change the path
   };
 
   return (
@@ -11,11 +14,7 @@ const ProjectCard = ({ name, imageUrl, websiteUrl }) => {
       onClick={handleClick}
       style={{ cursor: "pointer" }}
     >
-      <img
-        src={imageUrl}
-        alt={name}
-        // style={{ width: "100%", height: "auto" }}
-      />
+      <img src={imageUrl} alt={name} />
       <div className="project-name">
         <h3>{name}</h3>
       </div>
