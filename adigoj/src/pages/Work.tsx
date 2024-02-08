@@ -1,6 +1,7 @@
 // Work.tsx
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom"; // Import Link
+import ProjectCard from "../assets/Card";
 import "../App.css";
 
 const Work = () => {
@@ -11,8 +12,8 @@ const Work = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="container">
-        <div className="navigation">
+      <div className="container" id="page">
+        <div className="navigation" id="second">
           <Link to="/" className="navButton">
             Home
           </Link>
@@ -20,7 +21,26 @@ const Work = () => {
             About
           </Link>
         </div>
-        <h1>Work</h1>
+        <h1 id="heading">Work</h1>
+        <div className="section">
+          <div className="project-cards">
+            <ProjectCard
+              name="Redfall Trailer"
+              imageUrl="../../public/images/links/github.png"
+              websiteUrl="www.google.com"
+            />
+            <ProjectCard
+              name="Redfall Trailer"
+              imageUrl="../../public/images/links/github.png"
+              websiteUrl="www.google.com"
+            />
+            <ProjectCard
+              name="Redfall Trailer"
+              imageUrl="../../public/images/links/github.png"
+              websiteUrl="www.google.com"
+            />
+          </div>
+        </div>
       </div>
     </motion.div>
   );

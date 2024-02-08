@@ -26,6 +26,32 @@ const Home: React.FC = () => {
           <h1>adigoj</h1>
           <h2>Music and Sound Design</h2>
         </div>
+        <div className="contact">
+          <a
+            href="https://www.instagram.com/adigoj/"
+            target="_blank"
+            className="link"
+          >
+            <img src="../../public/images/links/instagram.png" />
+          </a>
+          <a
+            href="https://github.com/adam-alperk"
+            target="_blank"
+            className="link"
+          >
+            <img src="../../public/images/links/github.png" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/adigoj/"
+            target="_blank"
+            className="link"
+          >
+            <img src="../../public/images/links/linkedin-logo.png" />
+          </a>
+          <a href="mailto:adam.alperk@gmail.com" className="link">
+            <img src="../../public/images/links/mail.png" />
+          </a>
+        </div>
       </div>
     </motion.div>
   );
