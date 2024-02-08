@@ -26,17 +26,17 @@ const Work = () => {
           <div className="project-cards">
             <ProjectCard
               name="Redfall Trailer"
-              imageUrl="../../public/images/sd-cards/Redfall.jpeg"
+              imageUrl="../../public/images/sd-cards/Redfall.webp"
               websiteUrl="www.google.com"
             />
             <ProjectCard
               name="Paper Samurai"
-              imageUrl="../../public/images/sd-cards/PaperSamurai.png"
+              imageUrl="../../public/images/sd-cards/PaperSamurai.webp"
               websiteUrl="www.google.com"
             />
             <ProjectCard
               name="Transformers"
-              imageUrl="../../public/images/sd-cards/Transformers.jpg"
+              imageUrl="../../public/images/sd-cards/Transformers.webp"
               websiteUrl="www.google.com"
             />
           </div>

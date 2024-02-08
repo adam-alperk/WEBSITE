@@ -172,9 +172,11 @@ img {
   }
 
   .rive {
-    width: 80%;
-    height: 80%;
-    visibility: hidden;
+    display: flex;
+    position: fixed;
+    width: 96%;
+    bottom: -50%;
+    transform: rotate(136deg);
   }
 
   .navigation {
@@ -208,5 +210,13 @@ img {
   .navButton {
     margin: 10px;
     margin-top: 0px;
+  }
+
+  .rive {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    bottom: -45%;
+    transform: rotate(136deg);
   }
 }
