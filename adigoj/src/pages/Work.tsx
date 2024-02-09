@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom"; // Import Link
 import ProjectCard from "../assets/Card";
+import AudioPlayer from "../assets/AudioPlayer.jsx";
 import "../App.css";
 
 const Work = () => {
@@ -38,6 +39,18 @@ const Work = () => {
               name="Transformers"
               imageUrl="../../public/images/sd-cards/Transformers.webp"
               websiteUrl="www.google.com"
+            />
+          </div>
+          <div className="audio-players">
+            <AudioPlayer
+              mname="Coldplay UFO"
+              url="/ufo.mp3"
+              cover="../../public/images/links/github.png"
+            />
+            <AudioPlayer
+              mname="Coldplay - UFO"
+              url="/ufo.mp3"
+              cover="../../public/images/links/github.png"
             />
           </div>
         </div>

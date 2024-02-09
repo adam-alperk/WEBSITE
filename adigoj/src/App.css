@@ -132,6 +132,15 @@ img {
   flex-direction: row;
 }
 
+.audio-players {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px;
+  align-items: center;
+  width: 100%;
+}
+
 /* ############################################ HOVER ######################################### */
 
 .navButton:hover {
