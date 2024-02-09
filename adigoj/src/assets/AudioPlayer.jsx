@@ -27,13 +27,24 @@ const AudioPlayer = ({ mname, url, cover }) => {
   };
 
   const formatDuration = (seconds) => {
-    return new Date(seconds * 1000).toISOString().substr(11, 8);
+    const pad = (num) => (num < 10 ? "0" + num : num);
+    const hours = Math.floor(seconds / 3600);
+    const minutes = Math.floor((seconds % 3600) / 60);
+    const secondsLeft = Math.floor(seconds % 60);
+
+    if (hours > 0) {
+      return `${pad(hours)}:${pad(minutes)}:${pad(secondsLeft)}`;
+    } else {
+      return `${pad(minutes)}:${pad(secondsLeft)}`;
+    }
   };
 
   return (
     <div className="audio-player">
       <img src={cover} alt="Music cover" className="cover" />
-      <h2 className="music-name">{mname}</h2>
+      <div className="mname-div">
+        <h3 className="music-name">{mname}</h3>
+      </div>
       <ReactPlayer
         ref={playerRef}
         url={url}
@@ -57,7 +68,7 @@ const AudioPlayer = ({ mname, url, cover }) => {
           onChange={handleSeekChange}
           className="seek"
         />
-        <div>
+        <div className="time">
           {formatDuration(played)} / {formatDuration(duration)}
         </div>
         <input

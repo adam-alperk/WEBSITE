@@ -3,6 +3,7 @@
 
 .audio-player {
   display: flex;
+  position: relative;
   flex-direction: row;
   width: 97%;
   justify-content: center;
@@ -17,19 +18,32 @@
   width: 70px;
 }
 
-.music-name {
-  margin: 10px;
-  vertical-align: center;
-  text-align: center;
-  width: 100px !important;
+.mname-div {
+  display: flex;
+  position: absolute;
+  left: 11%;
+  justify-content: center;
+  align-items: center;
+  width: 13%;
 }
 
-.music-name + div {
-  visibility: hidden;
+.music-name {
+  font-family: "Unageo", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  /* width: 20% !important; */
+}
+
+div:audio {
+  width: 0% !important;
 }
 
 .controls {
   display: flex;
+  position: absolute;
+  left: 25%;
+  width: 73%;
   align-items: center;
   justify-content: center;
   font-family: "Unageo", sans-serif;
@@ -42,6 +56,8 @@
 
 .play-button {
   display: flex;
+  position: absolute;
+  left: 3%;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -55,11 +71,23 @@
   border-radius: 0px;
 }
 
-.seek,
-.volume {
-  /* width: 400px; */
+.seek {
+  display: flex;
+  position: absolute;
+  left: 17%;
+  width: 40%;
 }
 
-.seek {
-  width: 450px;
+.time {
+  display: flex;
+  position: absolute;
+  left: 60%;
+  width: 13%;
+}
+
+.volume {
+  display: flex;
+  position: absolute;
+  left: 80%;
+  width: 20%;
 }
