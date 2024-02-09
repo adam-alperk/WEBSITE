@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom"; // Import Link
 import ProjectCard from "../assets/Card";
-import AudioPlayer from "../assets/AudioPlayer.jsx";
+import AudioPlayer from "../assets/AudioPlayer.js";
 import "../App.css";
 
 const Work = () => {

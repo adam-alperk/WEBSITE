@@ -1,7 +1,19 @@
+import React from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate hook
 import "./Card.css";
 
-const ProjectCard = ({ name, imageUrl, websiteUrl }) => {
+// Define an interface for the component props
+interface ProjectCardProps {
+  name: string;
+  imageUrl: string;
+  websiteUrl: string;
+}
+
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  name,
+  imageUrl,
+  websiteUrl,
+}) => {
   const navigate = useNavigate(); // Initialize the useNavigate hook
 
   const handleClick = () => {

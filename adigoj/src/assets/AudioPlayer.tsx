@@ -1,33 +1,43 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, ChangeEvent } from "react";
 import ReactPlayer from "react-player";
 import "./AudioPlayer.css"; // Make sure to create this CSS file for styles
 
-const AudioPlayer = ({ mname, url, cover }) => {
-  const [playing, setPlaying] = useState(false);
-  const [volume, setVolume] = useState(0.8);
-  const [played, setPlayed] = useState(0);
-  const [duration, setDuration] = useState(0);
-  const playerRef = useRef(null);
+// Define a type for the props
+interface AudioPlayerProps {
+  mname: string;
+  url: string;
+  cover: string;
+}
+
+const AudioPlayer: React.FC<AudioPlayerProps> = ({ mname, url, cover }) => {
+  const [playing, setPlaying] = useState<boolean>(false);
+  const [volume, setVolume] = useState<number>(0.8);
+  const [played, setPlayed] = useState<number>(0);
+  const [duration, setDuration] = useState<number>(0);
+  const playerRef = useRef<ReactPlayer | null>(null);
 
   const handlePlayPause = () => {
     setPlaying(!playing);
   };
 
-  const handleVolumeChange = (e) => {
+  const handleVolumeChange = (e: ChangeEvent<HTMLInputElement>) => {
     setVolume(parseFloat(e.target.value));
   };
 
-  const handleSeekChange = (e) => {
-    setPlayed(parseFloat(e.target.value));
-    playerRef.current.seekTo(parseFloat(e.target.value));
+  const handleSeekChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const newPlayed = parseFloat(e.target.value);
+    setPlayed(newPlayed);
+    if (playerRef.current) {
+      playerRef.current.seekTo(newPlayed);
+    }
   };
 
-  const handleProgress = (state) => {
+  const handleProgress = (state: { playedSeconds: number }) => {
     setPlayed(state.playedSeconds);
   };
 
-  const formatDuration = (seconds) => {
-    const pad = (num) => (num < 10 ? "0" + num : num);
+  const formatDuration = (seconds: number): string => {
+    const pad = (num: number) => (num < 10 ? "0" + num : num.toString());
     const hours = Math.floor(seconds / 3600);
     const minutes = Math.floor((seconds % 3600) / 60);
     const secondsLeft = Math.floor(seconds % 60);

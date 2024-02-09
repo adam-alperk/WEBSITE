@@ -1,0 +1,48 @@
+/* General styles for both bars */
+.audio-player input[type="range"] {
+  -webkit-appearance: none; /* Override default CSS styles */
+  width: 100%; /* Full width */
+  background: transparent; /* Transparent background */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+.audio-player input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px; /* Height of the thumb */
+  width: 16px; /* Width of the thumb */
+  border-radius: 50%; /* Make it circular */
+  background: #4CAF50; /* Green background */
+  cursor: pointer;
+}
+
+.audio-player input[type="range"]::-moz-range-thumb {
+  height: 16px; /* Height of the thumb */
+  width: 16px; /* Width of the thumb */
+  border-radius: 50%; /* Make it circular */
+  background: #4CAF50; /* Green background */
+  cursor: pointer;
+}
+
+.audio-player input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px; /* Height of the track */
+  background: #ddd; /* Light grey background */
+  border-radius: 5px; /* Slightly rounded edges */
+}
+
+.audio-player input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 8px; /* Height of the track */
+  background: #ddd; /* Light grey background */
+  border-radius: 5px; /* Slightly rounded edges */
+}
+
+/* Specific styles for the seek bar */
+.seek {
+  /* Add any specific styles for the seek bar */
+}
+
+/* Specific styles for the volume bar */
+.volume {
+  /* Add any specific styles for the volume bar */
+}
