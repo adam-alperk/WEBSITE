@@ -214,14 +214,6 @@ img {
     align-items: center;
   }
 
-  .navigation {
-    position: absolute;
-  }
-
-  #homenav {
-    position: fixed;
-  }
-
   .navButton {
     margin: 10px;
     margin-top: 0px;
@@ -234,5 +226,15 @@ img {
     /* bottom: -45%; */
     /* transform: rotate(136deg); */
     visibility: hidden;
+  }
+}
+
+@media (max-width: 1800px) {
+  .navigation {
+    position: absolute;
+  }
+
+  #homenav {
+    position: fixed;
   }
 }
