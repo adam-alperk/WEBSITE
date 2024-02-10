@@ -32,24 +32,24 @@ const Home: React.FC = () => {
             target="_blank"
             className="link"
           >
-            <img src="../../public/images/links/instagram.png" />
+            <img src="/images/instagram.png" />
           </a>
           <a
             href="https://github.com/adam-alperk"
             target="_blank"
             className="link"
           >
-            <img src="../../public/images/links/github.png" />
+            <img src="/images/github.png" />
           </a>
           <a
             href="https://www.linkedin.com/in/adigoj/"
             target="_blank"
             className="link"
           >
-            <img src="../../public/images/links/linkedin-logo.png" />
+            <img src="/images/linkedin-logo.png" />
           </a>
           <a href="mailto:adam.alperk@gmail.com" className="link">
-            <img src="../../public/images/links/mail.png" />
+            <img src="/images/mail.png" />
           </a>
         </div>
       </div>

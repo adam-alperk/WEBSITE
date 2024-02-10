@@ -27,17 +27,17 @@ const Work = () => {
           <div className="project-cards">
             <ProjectCard
               name="Redfall Trailer"
-              imageUrl="../../public/images/sd-cards/Redfall.webp"
+              imageUrl="/images/Redfall.webp"
               websiteUrl="/work/redfall"
             />
             <ProjectCard
               name="Paper Samurai"
-              imageUrl="../../public/images/sd-cards/PaperSamurai.webp"
+              imageUrl="/images/PaperSamurai.webp"
               websiteUrl="www.google.com"
             />
             <ProjectCard
               name="Transformers"
-              imageUrl="../../public/images/sd-cards/Transformers.webp"
+              imageUrl="/images/Transformers.webp"
               websiteUrl="www.google.com"
             />
           </div>
@@ -45,12 +45,12 @@ const Work = () => {
             <AudioPlayer
               mname="Coldplay UFO"
               url="/ufo.mp3"
-              cover="../../public/images/links/github.png"
+              cover="/images/github.png"
             />
             <AudioPlayer
               mname="Coldplay - UFO"
               url="/ufo.mp3"
-              cover="../../public/images/links/github.png"
+              cover="/images/github.png"
             />
           </div>
         </div>
