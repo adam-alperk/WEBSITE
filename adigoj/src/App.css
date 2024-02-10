@@ -301,6 +301,37 @@ img {
     width: 100px;
     z-index: 4;
   }
+
+  #ind-p {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+@media (max-width: 980px) {
+  .about-grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 670px) {
+  .about-intro {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .about-intro {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .about-image {
+    margin-top: -100px;
+    margin-bottom: 40px;
+    padding: 5%;
+  }
 }
 
 @media (max-width: 470px) {

@@ -26,14 +26,14 @@ const About = () => {
               <h2 className="about-subheading1">
                 Welcome to My World of Sound and Code
               </h2>
-              <p>
+              <p id="ind-p">
                 Hello! I'm Aditya, a music producer, sound designer, and
                 multifaceted digital creator. With a passion that sits at the
                 crossroads of audio production and technology, I bring a unique
                 blend of creativity and technical expertise to every project I
                 touch.
               </p>
-              <p className="about-para">
+              <p className="about-para" id="ind-p">
                 As a music producer and sound designer, my journey is all about
                 exploring the limitless possibilities of sound. My work
                 involves:
@@ -77,7 +77,7 @@ const About = () => {
           <h2 className="about-subheading2">
             Beyond Sound: A Multidisciplinary Approach
           </h2>
-          <p className="about-para">
+          <p className="about-para" id="ind-p">
             My creative endeavors extend beyond the realm of audio:
           </p>
           <div className="about-grid">
@@ -111,7 +111,7 @@ const About = () => {
             </div>
           </div>
           <h2 className="about-subheading2">Let's Connect</h2>
-          <p>
+          <p id="ind-p">
             Whether you're in need of an evocative soundtrack for your next
             game, a dynamic website for your business, or a captivating 3D
             animation, I'm here to bring your vision to life. Let's explore the
