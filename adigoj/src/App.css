@@ -108,6 +108,12 @@
   align-items: center;
 }
 
+#abt-cnt {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
 .link,
 img {
   width: 1.8rem;
@@ -145,10 +151,10 @@ img {
 
 .about-image {
   display: flex;
-  position: fixed;
-  top: 280px;
-  left: 16%;
-  width: 25vw;
+  /* position: fixed; */
+  /* top: 280px; */
+  /* left: 16%; */
+  /* width: 25vw; */
   /* border: 2px solid #c9d1d59a; */
   padding: 20px;
 }
@@ -156,6 +162,7 @@ img {
 .abt-img {
   display: flex;
   width: 100%;
+  object-fit: cover;
 }
 
 .about-section {
@@ -163,14 +170,22 @@ img {
   position: absolute;
   flex-direction: column;
   /* border: 5px solid salmon; */
-  width: 42%;
-  right: 15%;
+  width: 1200px;
+  max-width: 95vw;
+  align-items: center;
   top: 300px;
+}
+
+.about-intro {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 20px;
 }
 
 .about-section h2 {
   font-family: "Unageo", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.5rem !important;
   font-weight: 600;
   text-align: center;
   color: #c9d1d5;
@@ -194,6 +209,7 @@ img {
 }
 
 .about-subheading1 {
+  font-size: 1.5rem !important;
   margin-bottom: 10px !important;
 }
 

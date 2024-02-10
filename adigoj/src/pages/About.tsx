@@ -20,25 +20,30 @@ const About = () => {
           </Link>
         </div>
         <h1 id="heading">About</h1>
-        <div className="about-image">
-          <img src="/images/adigoj_about2.jpg" className="abt-img" />
-        </div>
         <div className="about-section">
-          <h2 className="about-subheading1">
-            Welcome to My World of Sound and Code
-          </h2>
-          <p>
-            Hello! I'm Aditya, a music producer, sound designer, and
-            multifaceted digital creator. With a passion that sits at the
-            crossroads of audio production and technology, I bring a unique
-            blend of creativity and technical expertise to every project I
-            touch.
-          </p>
+          <div className="about-intro">
+            <div className="intro-text">
+              <h2 className="about-subheading1">
+                Welcome to My World of Sound and Code
+              </h2>
+              <p>
+                Hello! I'm Aditya, a music producer, sound designer, and
+                multifaceted digital creator. With a passion that sits at the
+                crossroads of audio production and technology, I bring a unique
+                blend of creativity and technical expertise to every project I
+                touch.
+              </p>
+              <p className="about-para">
+                As a music producer and sound designer, my journey is all about
+                exploring the limitless possibilities of sound. My work
+                involves:
+              </p>
+            </div>
+            <div className="about-image">
+              <img src="/images/adigoj_about2.jpg" className="abt-img" />
+            </div>
+          </div>
           <br />
-          <p className="about-para">
-            As a music producer and sound designer, my journey is all about
-            exploring the limitless possibilities of sound. My work involves:
-          </p>
           <div className="about-grid">
             <div className="about-card">
               <h3>Composing and Producing</h3>
@@ -114,6 +119,32 @@ const About = () => {
           </p>
           <br />
           <p className="about-para">Feel free to reach out ...</p>
+          <div className="contact" id="abt-cnt">
+            <a
+              href="https://www.instagram.com/adigoj/"
+              target="_blank"
+              className="link"
+            >
+              <img src="/images/links/instagram.png" />
+            </a>
+            <a
+              href="https://github.com/adam-alperk"
+              target="_blank"
+              className="link"
+            >
+              <img src="/images/links/github.png" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/adigoj/"
+              target="_blank"
+              className="link"
+            >
+              <img src="/images/links/linkedin-logo.png" />
+            </a>
+            <a href="mailto:adam.alperk@gmail.com" className="link">
+              <img src="/images/links/mail.png" />
+            </a>
+          </div>
         </div>
       </div>
     </motion.div>
