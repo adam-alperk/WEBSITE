@@ -141,6 +141,85 @@ img {
   width: 100%;
 }
 
+/* ######################################### ABOUT ####################################### */
+
+.about-image {
+  display: flex;
+  position: fixed;
+  top: 280px;
+  left: 16%;
+  width: 25vw;
+  /* border: 2px solid #c9d1d59a; */
+  padding: 20px;
+}
+
+.abt-img {
+  display: flex;
+  width: 100%;
+}
+
+.about-section {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  /* border: 5px solid salmon; */
+  width: 42%;
+  right: 15%;
+  top: 300px;
+}
+
+.about-section h2 {
+  font-family: "Unageo", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: #c9d1d5;
+  margin: 0px;
+}
+
+.about-section h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #c9d1d5;
+  text-align: center;
+}
+
+.about-section p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-align: left;
+  color: #c9d1d59a;
+}
+
+.about-subheading1 {
+  margin-bottom: 10px !important;
+}
+
+.about-subheading2 {
+  margin-top: 30px !important;
+  margin-bottom: 10px !important;
+}
+
+.about-para {
+  margin-bottom: 40px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 5px;
+  border: 2px solid #c9d1d59a;
+}
+
 /* ############################################ HOVER ######################################### */
 
 .navButton:hover {
