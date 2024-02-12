@@ -29,9 +29,9 @@ const About = () => {
               <p id="ind-p">
                 Hello! I'm Aditya, a music producer, sound designer, and
                 multifaceted digital creator. With a passion that sits at the
-                crossroads of audio production and technology, I bring a unique
-                blend of creativity and technical expertise to every project I
-                touch.
+                crossroads of audio production and technology, I endeavor to
+                expand the boundaries of the experiences and emotions that can
+                be elicited within the listener.
               </p>
               <p className="about-para" id="ind-p">
                 As a music producer and sound designer, my journey is all about
@@ -48,10 +48,11 @@ const About = () => {
             <div className="about-card">
               <h3>Composing and Producing</h3>
               <p>
-                From the soft melodies of ambient tracks to the heart-pounding
-                rhythms of electronic beats, my musical range knows no bounds. I
-                thrive on crafting soundscapes that evoke emotions and resonate
-                with audiences across various genres.
+                From the soothing harmonies of symphonic elegance to the
+                pulsating cadences of electronic vibrance, I try to weave a
+                diverse range of musical styles within my compositions. I thrive
+                on crafting soundscapes that evoke unexplored emotions and
+                resonate with audiences across various genres.
               </p>
             </div>
             <div className="about-card">
