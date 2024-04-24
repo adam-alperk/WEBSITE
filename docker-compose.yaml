@@ -1,0 +1,7 @@
+version: "3"
+services:
+  website:
+    container_name: adigoj
+    build: ./adigoj
+    ports: 
+      - "5174:5174"
