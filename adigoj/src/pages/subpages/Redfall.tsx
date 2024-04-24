@@ -7,8 +7,8 @@ import "./ProjectPages.css";
 
 const Redfall = () => {
   const videoOptions = {
-    height: "390",
-    width: "640",
+    height: "487.5", // default 390
+    width: "800", // defualt 640
     playerVars: {
       autoplay: 0,
     },
@@ -32,7 +32,51 @@ const Redfall = () => {
         <div className="project-section">
           <h1 id="heading">Redfall</h1>
           <h2 id="subheading">Re-Sound Design of Redfall Game Trailer</h2>
-          <YouTube videoId="LzFCTgei-MQ" opts={videoOptions} />
+          <YouTube
+            videoId="u-p2DD1Ki7o"
+            opts={videoOptions}
+            className="youtubeContainer"
+          />
+          <div className="project-details">
+            <h2>
+              Final linear media sound design project for Vancouver Film School.
+            </h2>
+            <div id="spacer-large" />
+            <div className="details-section">
+              <h2>Credits:</h2>
+              <h3>ADR</h3>
+              <ul>
+                <li>Layla - Srishti Gojamgunde</li>
+                <li>Jacob - Ishaan Trivedi</li>
+                <li>Dev - Aditya Gojamgunde</li>
+                <li>Remi - Maria Fernanda Altamirano Velazquez</li>
+                <li>Vampire 1 - Maria Fernanda Altamirano Velazquez</li>
+                <li>Vampire 2 - Aditya Gojamgunde</li>
+              </ul>
+              <ul>
+                <li>
+                  Recording Engineers - Aditya Gojamgunde, Maria Fernanda
+                  Altamirano Velazquez
+                </li>
+              </ul>
+              <h3>Foley</h3>
+              <ul>
+                <li>
+                  Artists - Aditya Gojamgunde, Maria Fernanda Altamirano
+                  Velazquez
+                </li>
+                <li>
+                  Recording Engineers - Aditya Gojamgunde, Maria Fernanda
+                  Altamirano Velazquez
+                </li>
+              </ul>
+              <h3>Sound Design, Editing and Mixing</h3>
+              <ul>
+                <li>Aditya Gojamgunde</li>
+              </ul>
+            </div>
+            <div id="spacer-large" />
+          </div>
         </div>
       </div>
     </motion.div>

@@ -5,6 +5,14 @@
   text-align: center;
 }
 
+#spacer-large {
+  height: 30px;
+}
+
+#spacer-small {
+  height: 5px;
+}
+
 .background {
   display: flex;
   position: fixed;

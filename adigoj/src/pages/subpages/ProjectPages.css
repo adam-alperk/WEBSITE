@@ -1,3 +1,7 @@
+* h2 {
+  margin-top: 0px !important;
+}
+
 .project-section {
   width: 1000px;
   height: -webkit-fill-awilable;
@@ -14,4 +18,43 @@
   font-size: 1.4rem;
   font-weight: 500;
   margin-bottom: 50px;
+}
+
+/* ######################################## PROJECT DETAILS #################################### */
+
+.details-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #06060677;
+  padding: 30px;
+  backdrop-filter: blur(5px);
+}
+
+.project-details h3 {
+  font-family: "Unageo", sans-serif;
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #c9d1d599;
+}
+
+ul,
+li {
+  font-family: "Unageo", sans-serif;
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #c9d1d599;
+}
+
+.project-details {
+  padding-top: 80px;
+}
+
+/* ############################################# PHONE ######################################## */
+
+@media (max-width: 1080px) {
+  .youtubeContainer {
+    width: 50% !important;
+  }
 }

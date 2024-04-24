@@ -33,7 +33,7 @@ const Work = () => {
             <ProjectCard
               name="Paper Samurai"
               imageUrl="/images/PaperSamurai.webp"
-              websiteUrl="www.google.com"
+              websiteUrl="/work/paper-samurai"
             />
             <ProjectCard
               name="Transformers"
