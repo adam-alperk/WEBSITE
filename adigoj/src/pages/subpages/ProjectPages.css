@@ -3,6 +3,9 @@
 }
 
 .project-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 1000px;
   height: -webkit-fill-awilable;
   max-width: 100vw;
@@ -20,7 +23,21 @@
   margin-bottom: 50px;
 }
 
+.youtube-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* ######################################## PROJECT DETAILS #################################### */
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  max-width: 95vw;
+}
 
 .details-section {
   display: flex;
@@ -54,7 +71,12 @@ li {
 /* ############################################# PHONE ######################################## */
 
 @media (max-width: 1080px) {
-  .youtubeContainer {
+  /* .youtube-container {
     width: 50% !important;
+  } */
+
+  iframe {
+    max-width: 95vw;
+    height: calc(95vw / 2);
   }
 }

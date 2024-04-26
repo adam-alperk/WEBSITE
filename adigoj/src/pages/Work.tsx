@@ -43,8 +43,8 @@ const Work = () => {
           </div>
           <div className="audio-players">
             <AudioPlayer
-              mname="Coldplay UFO"
-              url="/ufo.mp3"
+              mname="Carnival"
+              url="/music/Carnival_Unending.aac"
               cover="/images/github.png"
             />
             <AudioPlayer

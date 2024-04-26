@@ -35,7 +35,7 @@ const Redfall = () => {
           <YouTube
             videoId="u-p2DD1Ki7o"
             opts={videoOptions}
-            className="youtubeContainer"
+            className="youtube-container"
           />
           <div className="project-details">
             <h2>
