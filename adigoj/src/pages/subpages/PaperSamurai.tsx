@@ -44,12 +44,20 @@ const PaperSamurai = () => {
             </h2>
             <div id="spacer-large" />
             <div className="details-section">
-              <h2>Team:</h2>
+              <h2>Audio Team</h2>
               <ul>
                 <li>Aditya Gojamgunde</li>
                 <li>Ben Sousae</li>
                 <li>Shashwat</li>
               </ul>
+            </div>
+            <div id="spacer-large" />
+            <div className="details-section">
+              <h2>Game Flow</h2>
+              <img
+                src="/projects/paper-samurai/Flow_Chart.webp"
+                className="details-image"
+              />
             </div>
             <div id="spacer-large" />
           </div>

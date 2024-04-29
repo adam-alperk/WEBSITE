@@ -47,6 +47,12 @@
   backdrop-filter: blur(5px);
 }
 
+.details-image {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+}
+
 .project-details h3 {
   font-family: "Unageo", sans-serif;
   text-align: left;
