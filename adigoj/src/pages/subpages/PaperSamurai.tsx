@@ -43,6 +43,15 @@ const PaperSamurai = () => {
               Vancouver Film School.
             </h2>
             <div id="spacer-large" />
+            <h2>
+              Paper Samurai is a hack and slash isometric 3D game, where the
+              player controls a deadly and swift samurai made from washi paper.
+              Throughout the game they must escape from the Great Demon, while
+              killing its evil servants. To complete the game the player must
+              find three ofuda seals scattered around that will power their
+              sword allowing them to vanquish this great evil.
+            </h2>
+            <div id="spacer-large" />
             <div className="details-section">
               <h2>Audio Team</h2>
               <ul>
@@ -58,6 +67,37 @@ const PaperSamurai = () => {
                 src="/projects/paper-samurai/Flow_Chart.webp"
                 className="details-image"
               />
+            </div>
+            <div id="spacer-large" />
+            <div className="details-section">
+              <h2>Interactive Music</h2>
+              <p>
+                Composed with Traditional Japanese and orchestral instruments
+                with multiple variations for each section of the game. Intensity
+                of the music increases as the game progresses and gets more
+                difficult.
+              </p>
+              <img
+                src="/projects/paper-samurai/MX_2.png"
+                className="details-image"
+              />
+              <div id="spacer-large" />
+              <img
+                src="/projects/paper-samurai/MX_1.png"
+                className="details-image"
+              />
+              <div id="spacer-large" />
+              <div className="details-grid">
+                <img
+                  src="/projects/paper-samurai/MX_3.png"
+                  className="details-image"
+                />
+                <p className="details-grid-p">
+                  All compositions were composed in Ableton Live, mixed in Pro
+                  Tools, and implemented in Wwise with further side-chaining,
+                  randomization and sequencing.
+                </p>
+              </div>
             </div>
             <div id="spacer-large" />
           </div>

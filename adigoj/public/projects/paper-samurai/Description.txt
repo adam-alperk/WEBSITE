@@ -16,7 +16,7 @@ ENEMIES
 
 - The heirarchy of container starts with type sounds not characters
 - Use of nested switchs for more control
-- The idea with the enemies was to keep them a ix of literal animal sounds and menacing monster sounds
+- The idea with the enemies was to keep them a mix of literal animal sounds and menacing monster sounds
 
 THE GREAT DEMON (BOSS)
 
