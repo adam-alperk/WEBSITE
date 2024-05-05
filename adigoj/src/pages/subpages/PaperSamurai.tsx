@@ -103,13 +103,37 @@ const PaperSamurai = () => {
                   Tools, and implemented in Wwise with further side-chaining,
                   randomization and sequencing.
                 </p>
-                <div id="spacer-large" />
-                <div className="details-section">
-                  <h2>Main Menu</h2>
-                </div>
-                <div id="spacer-large" />
               </div>
             </div>
+            <div id="spacer-large" />
+            <div className="details-section">
+              <h2>Main Menu</h2>
+              <p>
+                Every time the user hovers over a menu item with the cursor, a
+                random koto note is played. This creates a new melody every
+                time. I used the Japanese scale, Yo to achieve this effect. Yo
+                was the perfect scale for this as it is a major pentatonic scale
+                which starts on the 5th degree, which gives the sense of it
+                having two tonal centers. So random notes played in this scale
+                always sound melodious.
+              </p>
+              <div id="spacer-large" />
+              <div className="details-grid">
+                <img
+                  src="/projects/paper-samurai/MX_Menu.png"
+                  className="details-image"
+                />
+                <p className="details-grid-p">
+                  Individual notes of the Yo scale were recorded in two octaves
+                  on a Koto software instrument. Each note was recorded with
+                  multiple velocities (loudness). Overall 163 Koto notes were
+                  recorded and randomized. The intention was to engage the
+                  players on the main menu screen so they can have fun making
+                  new melodies.
+                </p>
+              </div>
+            </div>
+            <div id="spacer-large" />
             <div id="spacer-large" />
           </div>
         </div>

@@ -24,7 +24,7 @@ const Home: React.FC = () => {
         <div className="main">
           <Rive src="/cursor_tracking2.riv" className="rive" />
           <h1>adigoj</h1>
-          <h2>Music and Sound Design</h2>
+          <h2 id="home-subheading">Music and Sound Design</h2>
         </div>
         <div className="contact">
           <a
