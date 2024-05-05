@@ -39,8 +39,14 @@ const PaperSamurai = () => {
           />
           <div className="project-details">
             <h2>
-              Final interactive sound design and implementation project for
-              Vancouver Film School.
+              Our final term project at Vancouver Film School centered on
+              interactive sound design and implementation. As a team of three,
+              we created and integrated sound assets into a video game developed
+              by fellow students. Our responsibilities included mixing, ambient
+              effects, and troubleshooting, with regular milestones prompting
+              presentations of our progress and challenges. This project
+              mirrored the demands of AAA gaming companies, emphasizing
+              precision and problem-solving.
             </h2>
             <div id="spacer-large" />
             <h2>
@@ -97,6 +103,11 @@ const PaperSamurai = () => {
                   Tools, and implemented in Wwise with further side-chaining,
                   randomization and sequencing.
                 </p>
+                <div id="spacer-large" />
+                <div className="details-section">
+                  <h2>Main Menu</h2>
+                </div>
+                <div id="spacer-large" />
               </div>
             </div>
             <div id="spacer-large" />
