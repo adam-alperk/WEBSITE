@@ -40,6 +40,9 @@ const Redfall = () => {
           <div className="project-details">
             <h2>
               Final linear media sound design project for Vancouver Film School.
+              This was an individual project in which we were tasked with
+              complete re-sound designing of a linear media clip of up to 3 and
+              a half minutes.
             </h2>
             <div id="spacer-large" />
             <div className="details-section">
@@ -74,6 +77,20 @@ const Redfall = () => {
               <ul>
                 <li>Aditya Gojamgunde</li>
               </ul>
+            </div>
+            <div id="spacer-large" />
+            <div className="details-section">
+              <h2>Project</h2>
+              <p>
+                The final mix was created for 5.1 and then mixed down to LTRT
+                and LoRo. The above video has LoRo mix.
+              </p>
+              <img className="details-image" src="/projects/redfall/full.png" />
+              <div id="spacer-large" />
+              <img
+                className="details-image"
+                src="/projects/redfall/5_1_mix.png"
+              />
             </div>
             <div id="spacer-large" />
           </div>
