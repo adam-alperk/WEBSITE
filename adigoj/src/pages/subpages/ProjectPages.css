@@ -96,3 +96,18 @@ li {
     height: calc(95vw / 2);
   }
 }
+
+@media (max-width: 809px) {
+  .details-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .details-grid-p {
+    margin-left: 0px;
+  }
+
+  #reverse-column {
+    flex-direction: column-reverse !important;
+  }
+}

@@ -118,7 +118,7 @@ const PaperSamurai = () => {
                 always sound melodious.
               </p>
               <div id="spacer-large" />
-              <div className="details-grid">
+              <div id="reverse-column" className="details-grid">
                 <img
                   src="/projects/paper-samurai/MX_Menu.png"
                   className="details-image"
