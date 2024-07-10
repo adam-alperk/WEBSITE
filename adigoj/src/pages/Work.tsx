@@ -48,8 +48,8 @@ const Work = () => {
               cover="/music/music_1.webp"
             />
             <AudioPlayer
-              mname="Coldplay - UFO"
-              url="/ufo.mp3"
+              mname="Bittersweet"
+              url="/music/Bittersweet.wav"
               cover="/music/music_2.webp"
             />
           </div>
