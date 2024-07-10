@@ -58,11 +58,11 @@ const About = () => {
             <div className="about-card">
               <h3>Sound Design</h3>
               <p>
-                Utilizing the latest techniques and tools, I sculpt sounds that
-                breathe life into visual media. My specialty lies in creating
-                immersive audio environments for video games, where every
-                footstep, environmental ambience, and background score is
-                meticulously designed to enhance the player's experience.
+                Utilizing the latest techniques and tools, I sculpt sounds to
+                enhance visual media. My specialty lies in creating immersive
+                audio environments for video games, where every footstep,
+                environmental ambience, and background score is meticulously
+                designed to enhance the player's experience.
               </p>
             </div>
             <div className="about-card">
@@ -103,11 +103,9 @@ const About = () => {
             <div className="about-card">
               <h3>3D Art and Animation</h3>
               <p>
-                My artistic capabilities come to life through 3D art and
-                animation. Whether it's modeling characters for a game or
-                crafting animated sequences for multimedia projects, I employ a
-                blend of artistic vision and technical proficiency to create
-                visually stunning works.
+                My self-taught skills in 3D modelling, texturing and animation
+                allow me to create visual content to complement my sound design
+                and compositions.
               </p>
             </div>
           </div>
