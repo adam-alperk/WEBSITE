@@ -117,7 +117,7 @@ const About = () => {
             possibilities together and create something extraordinary.
           </p>
           <br />
-          <p className="about-para">Feel free to reach out ...</p>
+          <p className="about-para">Feel free to reach out..</p>
           <div className="contact" id="abt-cnt">
             <a
               href="https://www.instagram.com/adigoj/"

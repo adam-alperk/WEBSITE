@@ -52,6 +52,11 @@ const Work = () => {
               url="/music/Bittersweet.wav"
               cover="/music/music_2.webp"
             />
+            <AudioPlayer
+              mname="Smoke"
+              url="/music/Smoke.mp3"
+              cover="/music/music_1.webp"
+            />
           </div>
         </div>
       </div>
