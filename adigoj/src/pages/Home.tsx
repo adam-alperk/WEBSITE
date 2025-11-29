@@ -48,7 +48,7 @@ const Home: React.FC = () => {
           >
             <img src="/images/linkedin-logo.png" />
           </a>
-          <a href="mailto:adam.alperk@gmail.com" className="link">
+          <a href="mailto:adigoj@proton.me" className="link">
             <img src="/images/mail.png" />
           </a>
         </div>
