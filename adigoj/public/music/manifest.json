@@ -1,0 +1,50 @@
+[
+  {
+    "index": 1,
+    "title": "Carnival",
+    "url": "/music/1_Carnival.aac",
+    "cover": "/music/1_music.webp"
+  },
+  {
+    "index": 2,
+    "title": "Bittersweet",
+    "url": "/music/2_Bittersweet.wav",
+    "cover": "/music/2_music.webp"
+  },
+  {
+    "index": 3,
+    "title": "Smoke",
+    "url": "/music/3_Smoke.mp3",
+    "cover": "/music/3_music.webp"
+  },
+  {
+    "index": 4,
+    "title": "50 Hour Rock",
+    "url": "/music/4_50 Hour Rock.wav",
+    "cover": "/music/4_music.webp"
+  },
+  {
+    "index": 5,
+    "title": "Bhala Hua Ya Bura",
+    "url": "/music/5_Bhala Hua Ya Bura.wav",
+    "cover": "/music/5_music.webp"
+  },
+  {
+    "index": 6,
+    "title": "For You",
+    "url": "/music/6_For You.wav",
+    "cover": "/music/6_music.webp"
+  },
+  {
+    "index": 7,
+    "title": "Save Me",
+    "url": "/music/7_Save Me.wav",
+    "cover": "/music/7_music.webp"
+  },
+  {
+    "index": 8,
+    "title": "Rasta Mera",
+    "url": "/music/8_Rasta Mera.wav",
+    "cover": "/music/8_music.webp"
+  }
+]
