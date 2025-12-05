@@ -13,6 +13,10 @@
   height: 5px;
 }
 
+h2 {
+  margin-bottom: 0px;
+}
+
 .background {
   display: flex;
   position: fixed;
@@ -155,6 +159,7 @@ img {
   flex-direction: column;
   justify-content: center;
   margin: 40px;
+  margin-top: 20px;
   align-items: center;
   width: 100%;
 }

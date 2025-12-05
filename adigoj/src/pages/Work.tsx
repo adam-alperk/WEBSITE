@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import ProjectCard from "../assets/Card";
 import AudioPlayer from "../assets/AudioPlayer.js";
+import ExpandableAudio from "../assets/ExpandableAudio.js";
 import "../App.css";
 import React, { useEffect, useState } from "react";
 
@@ -54,6 +55,8 @@ const Work: React.FC = () => {
         </div>
         <h1 id="heading">Work</h1>
         <div className="section">
+          <h2>Sound Design</h2>
+          <div id="spacer-large" />
           <div className="project-cards">
             <ProjectCard
               name="Redfall Trailer"
@@ -71,6 +74,10 @@ const Work: React.FC = () => {
               websiteUrl="www.google.com"
             />
           </div>
+          <div id="spacer-large" />
+          <div id="spacer-large" />
+
+          <h2>Music</h2>
 
           <div className="audio-players">
             {error && (
@@ -83,7 +90,7 @@ const Work: React.FC = () => {
 
             {tracks &&
               tracks.map((t) => (
-                <AudioPlayer
+                <ExpandableAudio
                   key={t.index}
                   mname={t.title}
                   url={t.url}

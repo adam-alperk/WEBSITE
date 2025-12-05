@@ -1,6 +1,6 @@
 import React, { useState, useRef, ChangeEvent } from "react";
 import ReactPlayer from "react-player";
-import "./AudioPlayer.css"; // Make sure to create this CSS file for styles
+import "./AudioPlayer.css";
 
 // Define a type for the props
 interface AudioPlayerProps {
