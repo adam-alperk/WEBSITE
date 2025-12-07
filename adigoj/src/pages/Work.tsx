@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import ProjectCard from "../assets/Card";
-import AudioPlayer from "../assets/AudioPlayer.js";
 import ExpandableAudio from "../assets/ExpandableAudio.js";
 import "../App.css";
 import React, { useEffect, useState } from "react";

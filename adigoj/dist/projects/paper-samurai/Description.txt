@@ -1,0 +1,50 @@
+GAME DESCRIPTION
+
+Paper samurai is a 3D isometric hack and slash game, where the player has to save the Sakura village from the wrath of The Great Demon. The Demon is invincible but can be weakened by killing smaller enemies and collecting seals at various stages in the game. The game ends with a fierce battle with the Great Demon.
+
+INTERACTIVE MUSIC
+
+- Composed Japanese intruments with orchestral instruments with multiple variations for each section intensity of music increases as the game progresses
+
+AMBIENCES
+
+- Inspired by Ghost of Tsushima
+- Windy Night Ambience
+- Side Chain when going close to fire
+
+ENEMIES
+
+- The heirarchy of container starts with type sounds not characters
+- Use of nested switchs for more control
+- The idea with the enemies was to keep them a mix of literal animal sounds and menacing monster sounds
+
+THE GREAT DEMON (BOSS)
+
+- The sounds are designed considering the appearance and importance of the character to the game
+- Animal and human screams processed together
+- Different reaction to hits based on invincibility of the Demon
+
+SAMURAI
+
+- Realistic sounds for regular attacks and movement.
+- Light Airy whoosh for dash. 
+- Multiple whoosh added with paper movement with frequency shift for Spawning.
+- Ultimate Attack has voice mixed with bells and paper crumble sounds 
+- Seal collection has bright magical sounds. Three seals has three different sounds based on Demon Invincibility.
+
+OPTIMIZATION
+
+- Biggest challenge was that irrelevant sounds played along with relevant sounds.
+- Limiting sounds and playing them based on player position helped make the game sound cleaner.
+- Use of the profiler to identify and fix problems.
+- Streaming of looping sounds that don’t require sync saved CPU processing.
+- Using a mix of Vorbis and ADPCM conversion settings reduced the size of the game dramatically. 
+- Total size reduced from 1.7 GBs to 146 MBs
+
+MIXING
+
+- Overall idea was to make the game sound clean and balanced between all the speakers. 
+- The requirement for the levels was -18LUFS. The approach was to put forth the sounds we wanted the audience to experience. We used the Master Mixer Hierarchy and the Actor Mixer Hierarchy to control the levels. 
+- Pan was determined by distance, position and orientation of main character from sound source. 
+- We controlled the frequency content of the centre speaker based on the importance of the sounds. Using the centre percent feature of Wwise we controlled what sounds went into centre speakers.
+- We made multiple reverb settings. Short reverb for the front speakers and Longer reverbs for the surround speakers. Most of the sounds went through these reverbs. Music had its separate reverb.
